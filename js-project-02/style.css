@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    justify-content: center;
+
+
+
+}
+
+.buttons {
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    background-color: aqua;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+    border: 1px soild black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    justify-content: space-between;
+}
