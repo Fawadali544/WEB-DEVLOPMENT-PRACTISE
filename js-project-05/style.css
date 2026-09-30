@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+
+}
+
+button {
+    padding: 20px;
+    width: 350px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    background-color: brown;
+    cursor: pointer;
+    color: aquamarine;
+
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: white;
+}
