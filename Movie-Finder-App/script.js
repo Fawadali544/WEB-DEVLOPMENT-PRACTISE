@@ -1,6 +1,7 @@
 let input = document.getElementById('search-input');
 let btn = document.getElementById('search-btn');
 let grid = document.getElementById('movies-grid');
+let loader = document.getElementById('loader');
 
 btn.addEventListener('click', async function () {
     let query = input.value;
@@ -11,7 +12,9 @@ btn.addEventListener('click', async function () {
     }
 
     // Naya search karne par purane result saaf kar do aur Loading dikhao
-    grid.innerHTML = "<h2>Loading... ⏳</h2>";
+    grid.innerHTML = "";
+    loader.classList.remove('hidden');
+
 
     try {
         // TVMaze API ko hit karo
@@ -53,5 +56,8 @@ btn.addEventListener('click', async function () {
     } catch (error) {
         console.log("Error:", error);
         grid.innerHTML = "<h2>Internet masla ya API down hai!</h2>";
+    } finally {
+        // FINALLY BLOCK: API success ho ya fail, aakhir mein spinner hide kar do
+        loader.classList.add('hidden');
     }
 });
